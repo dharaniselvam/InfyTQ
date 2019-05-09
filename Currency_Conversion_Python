@@ -1,0 +1,26 @@
+#PF-Tryout
+
+def convert_currency(amount_needed_inr,current_currency_name):
+    current_currency_amount=0
+    value_of_one_rupee=0;
+    #write your logic here
+    if(current_currency_name=="Euro"):
+        value_of_one_rupee=0.01417;
+    elif(current_currency_name=="British Pound"):
+        value_of_one_rupee=0.0100;
+    elif(current_currency_name=="Australian Dollar"):
+        value_of_one_rupee=0.02140;
+    elif(current_currency_name=="Canadian Dollar"):
+        value_of_one_rupee=0.02027;
+    else:
+        value_of_one_rupee=-1(amount_needed_inr/amount_needed_inr);
+    current_currency_amount=value_of_one_rupee*amount_needed_inr;
+    return current_currency_amount
+
+
+#Provide different values for amount_needed_inr,current_currency_name and test your program
+currency_needed=convert_currency(3500,"British Pound")
+if(currency_needed!= -1):
+    print(currency_needed )
+else:
+    print("Invalid currency name")
