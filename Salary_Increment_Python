@@ -1,0 +1,24 @@
+#PF-Tryout
+
+def find_new_salary(current_salary,job_level):
+    # write your logic here
+    hike_percent=0;
+    if(job_level==3):
+        hike_percent=15;
+    elif(job_level==4):
+        hike_percent=7;
+    elif(job_level==5):
+        hike_percent=5;
+    else:
+        hike_percent=0;
+    increment=0;
+    increment=current_salary*hike_percent;
+    total_increment=0;
+    total_increment=increment/100;
+    new_salary=current_salary+total_increment;
+    
+    return new_salary
+
+# provide different values for current_salary and job_level and test yor program
+new_salary=find_new_salary(10000,3)
+print(new_salary)
