@@ -1,0 +1,24 @@
+//PF-Exer-16
+
+num1=5
+num2=10
+
+//Write your code here
+max=0;
+if(num1>num2)
+{
+    max=num1;
+}
+else
+{
+    max=num2;
+}
+while(num1!=0)
+{
+    if((max%num1==0)&&(max%num2==0))
+    {
+        console.log(max)
+        break;
+    }
+    max=max+1;
+}
